@@ -1,0 +1,30 @@
+version: "3.3"
+
+services:
+  featureengineering:
+    build: featureEngineering/
+    ports:
+      - "10080:80"
+    networks:
+      - back-tier
+    links:
+      - db
+      - ruleengine
+
+  ruleengine:
+    build: ruleEngine/
+    ports:
+      - "11080:80"
+    networks:
+      - back-tier
+
+  db:
+    image: mongo:latest
+    ports:
+      - "0.0.0.0:27017:27017"
+    networks:
+      - back-tier
+
+networks:
+  back-tier:
+
