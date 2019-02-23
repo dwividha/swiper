@@ -102,3 +102,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+#Dev Environment ignores
+*.DS_Store
