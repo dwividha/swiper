@@ -1,7 +1,7 @@
 function getAllDataRequest() {
     //TODO: implement send get request to https://0.0.0.0:10080/getAllData
     var http = new XMLHttpRequest();
-    var url = 'https://backend.tinerd.com:10443/getAllData';
+    var url = 'https://tinerd.cak.sh/getAllData';
     // var params = 'orem=ipsum&name=binny';
     http.open('GET', url, true);
 

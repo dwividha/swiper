@@ -4,8 +4,8 @@ services:
   featureengineering:
     build: featureEngineering/
     ports:
-      - "80:10080"
-      - "443:10443"
+      - "80:80"
+      - "443:443"
     networks:
       - back-tier
     volumes:
